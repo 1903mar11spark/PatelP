@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8"/>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Zillicoah</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" media="screen" href="MainApples.css"/> 
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Inconsolata">
+   <!-- <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>-->
+    
+</head>
+<body id="play-content">
+    <div id="navbar" class="sidemenu">
+        <a href="javascript:void(0)" class="close" onclick="closeSM()">&times;</a>
+        <div class="sm-wrapper">
+            <a class="nav" href="MainApples.html">HOME</a>
+            <a class="nav" href="Rules.html">RULES</a>
+            <a class="nav" href="Play.html">PLAY</a>
+            <a class="nav" href="Contact.html">CONTACT</a>
+        </div>
+    </div>
+    <div>
+            <div style="font-size: 50px; cursor: pointer; color: #5b5b5b" onclick="openSM()">&#9776</div>
+    </div>
+    
+    <div>
+    <button id="newround" type="submit" value="submit">NEW ROUND</button>
+    </div>
+    <br>
+    <br>
+    <div id="maincard">
+    <p id="adj" class="card"></p>
+    </div>
+    <br><br>
+    <div id="row1">
+    <p id="noun1" class="card noun"></p>
+    <p id="noun2" class="card noun"></p>
+    <p id="noun3" class="card noun"></p>
+    </div>
+    <div id="row2">
+    <p id="noun4" class="card noun"></p>
+    <p id="noun5" class="card noun"></p>
+    <p id="noun6" class="card noun"></p>
+    <p id="noun7" class="card noun"></p>
+    </div>
+
+<!--Number of Players Modal
+    <button type="button" id="toplay">Click Me to Play</button>
+    <div class="bg-modal">
+        <div class="modal-content">
+            <div class="close">&times;</div>
+            <form>
+                <p style="font-size: 30px; font-family:'inconsolata', monospace;">NUMBER OF PLAYERS</p><br><br>
+                <select name="nums" style="width: 90px; height: 50px;">
+                    <option id="two" value="2">Two</option>
+                    <option id="three" value="3">Three</option>
+                    <option id="four" value="4">Four</option>
+                    <option id="five" value="5">Five</option>
+                    <option id="six" value="6">Six</option>
+                </select>
+                <br>
+                <br>
+                <a type="button" id="finalnum" href="Play.html">Submit</a>
+            </form>
+        </div>
+    </div>-->
+    <div id="playerheader">
+            <p id="hello"></p>
+            <p id=player1name></p>
+            <p id=player2name></p>
+            <p id=player3name></p>
+            <p id=player4name></p>
+            <p id=player5name></p>
+            <p id=player6name></p>
+    </div>
+    </body>
+    <script src="Play.js"> </script>
+    </html>
+

@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8"/>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Zillicoah</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" media="screen" href="MainApples.css"/> 
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Inconsolata">
+    
+</head>
+<body id="play1-content">
+    <div id="navbar" class="sidemenu">
+        <a href="javascript:void(0)" style="font-size: 50px;" class="close" onclick="closeSM()">&times;</a>
+        <div class="sm-wrapper">
+                <a class="nav" href="MainApples.html">HOME</a>
+                <a class="nav" href="Rules.html">RULES</a>
+                <a class="nav" href="Play1.html">PLAY</a>
+                <a class="nav" href="Contact.html">CONTACT</a>
+        </div>
+    </div>
+    <div>
+        <div style="font-size: 40px; cursor: pointer; color: #5b5b5b" onclick="openSM()">&#9776</div>
+        <h2>PLAY</h2>
+        <!-- <a href="Play.html">Submit</a> -->
+    </div>
+    <div>
+        <p></p>
+        <form>
+            <select id="dropdownlist" onchange="inputFields(Number(this.value))">
+                <option value="2">Number of Players</option>
+                <option id="two" value="2">2</option>
+                <option id="three" value="3">3</option>
+                <option id="four" value="4">4</option>
+                <option id="five" value="5">5</option>
+                <option id="six" value="6">6</option>
+            </select>
+            <br><br><br>
+            <div id="names">
+                <input id="player1" class="player" type=text placeholder="Player 1" required><br><br>
+                <input id="player2" class="player" type=text placeholder="Player 2" ><br><br>
+                <input id="player3" class="player" type=text placeholder="Player 3" ><br><br>
+                <input id="player4" class="player" type=text placeholder="Player 4" ><br><br>
+                <input id="player5" class="player" type=text placeholder="Player 5" ><br><br>
+                <input id="player6" class="player" type=text placeholder="Player 6" ><br><br>
+            </div> <br><br>
+            <button id="done" type="submit" onclick=storeData()>Submit</button><br>
+            <button id="redirect1" type="submit" onclick=redirect()>Play</button>
+        </form>
+    </div>
+</body>
+<script src="Play1.js"> </script>
+</html>
